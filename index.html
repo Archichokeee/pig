@@ -3,22 +3,61 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Pig Test</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="pigture.png">
+  <title>Pig The Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/pigture.png">
 </head>
 
 <header class="bar">
-  <span id="logo">
+  <div id="logo">
     <a href="index.html">
-      <img id="pigture" src="pigture.png" alt="The 'Pig The Game''s logo">
+      <img id="pigture" src="images/pigture.png" alt="The 'Pig The Game''s logo">
     </a>
     <h1 class="title">PIG!</h1>
-  </span>
+  </div>
+  <div id="boxDiv">
+    <label for="languageBox">Language:</label>
+    <select id="languageBox">
+      <option value="index.html">English</option>
+      <option value="fr/index.html">Français</option>
+      <option value="de">Deutsch</option>
+    </select>
+  </div>
+  <script src="js/languageScript.js"></script>
 </header>
 
 <body>
-
+  <div class="textBlock">
+    <h2>What is Pig???</h2>
+    <p>Pig is a simple word association game whereby players compete to be the first to link to the word pig in sequence without being eliminated and within the time limit. Whether a word has some connection to the previous word is outlined in the rules, though it is ultimately up to the collective to decide through discussion and debate.</p>
+  </div>
+  <div id="intro">
+    <div class="textBox">
+      <h3>Contents:</h3>
+      <ol>
+        <li><a>Law 1 - The Start of Play</a></li>
+        <li><a>Law 2 - Elimination</a></li>
+        <li><a>Law 3 - Recovery</a></li>
+        <li><a>Law 4 - Offsides</a></li>
+        <li><a>Law 5 - Fouls</a></li>
+        <li><a>Law 6 - Power Plays</a></li>
+        <li><a>Law 7 - Shifts</a></li>
+        <li><a>Law 8 - The End of Play</a></li>
+        <li><a>Variations</a></li>
+      </ol>
+    </div>
+    <div class="textBox">
+      <h3>Other Information:</h3>
+      <h4>Pig Support Line:</h4>
+      <p id="phoneNumber">07564 177485</p>
+      <h4>Credits:</h4>
+      <ul>
+        <li>Creator/Lead Writer: <b>Will Moores</b></li>
+        <li>Editor/Writer/Visionary/Legend: <b>Jonny Moores</b></li>
+        <li>Veteran/writer: <b>Lizzie Moores</b></li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 <footer class="bar">

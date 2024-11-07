@@ -1,0 +1,84 @@
+* {
+  font-family: "Comic Sans MS", cursive;
+}
+
+body {
+  background-color: #FFB9F27D;
+}
+
+p {
+  padding-left: 3px;
+}
+
+.bar {
+  border-style: groove;
+  border-color: #fffafa;
+  background: #60B0B0;
+  display: flex;
+  border-width: 10px;
+}
+
+.title {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.textBlock {
+  text-align: center;
+  border-style: dotted;
+  border-width: 2px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.textBox {
+  border-style: dotted;
+  padding-right: 7px;
+  width: 100%;
+}
+
+.textBox > h3{
+  text-align: center;
+}
+
+.textBox > h4{
+  padding-left: 10px;
+}
+
+#phoneNumber {
+  text-align: center;
+  border-style: dashed;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#boxDiv {
+  margin-left: auto;
+}
+
+#languageBox {
+  background-color: #60B0B0;
+  border-style: none;
+  height: 50px;
+  width: 75px;
+}
+
+#logo {
+  display: flex;
+  border-style: solid;
+  border-width: 3px;
+}
+
+#pigture{
+  width: 107px;
+  height: 63px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+#intro {
+  display: flex;
+  margin-bottom: 10px;
+}
