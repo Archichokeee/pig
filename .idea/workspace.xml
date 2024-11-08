@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95059639-e7d5-4276-8551-301ebccbd9dd" name="Changes" comment="COMPLETED MAIN BODY&#10;-Fixed styling issues&#10;-Decoration">
-      <change afterPath="$PROJECT_DIR$/de/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es/index.html" afterDir="false" />
+    <list default="true" id="95059639-e7d5-4276-8551-301ebccbd9dd" name="Changes" comment="ADDED LANGUAGE SUPPORT&#10;-French&#10;-German&#10;-Spanish ~ NEEDS FIXING">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fr/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/es/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,7 @@
       <updated>1729285806450</updated>
       <workItem from="1729285808633" duration="22732000" />
       <workItem from="1730294456761" duration="618000" />
-      <workItem from="1730803170096" duration="36530000" />
+      <workItem from="1730803170096" duration="38400000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -127,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731019141196</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ADDED LANGUAGE SUPPORT&#10;-French&#10;-German&#10;-Spanish ~ NEEDS FIXING">
+      <option name="closed" value="true" />
+      <created>1731024847382</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731024847382</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +152,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Main base completed&#10;&#10;--ADDED SEMI LANGUAGE SUPPORT&#10;--ADDED INTRO&#10;--ORGANISATION" />
     <MESSAGE value="COMPLETED MAIN BODY&#10;-Fixed styling issues&#10;-Decoration" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMPLETED MAIN BODY&#10;-Fixed styling issues&#10;-Decoration" />
+    <MESSAGE value="ADDED LANGUAGE SUPPORT&#10;-French&#10;-German&#10;-Spanish ~ NEEDS FIXING" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADDED LANGUAGE SUPPORT&#10;-French&#10;-German&#10;-Spanish ~ NEEDS FIXING" />
   </component>
 </project>
