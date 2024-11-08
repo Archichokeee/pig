@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pig El Juego</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../images/pigture.png">
+</head>
+
+<header class="bar">
+  <div id="logo">
+    <a href="./">
+      <img id="pigture" src="../images/pigture.png" alt="El logo de 'Pig El Juego'">
+    </a>
+    <h1 class="title">¡PIG!</h1>
+  </div>
+  <div id="boxDiv">
+    <label for="languageBox">Idioma:</label>
+    <select id="languageBox">
+      <option value="./">Español</option>
+      <option value="../">English</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+    </select>
+  </div>
+  <script src="../js/languageScript.js"></script>
+</header>
+
+<body>
+<div class="textBlock">
+  <h2>¿Qué es Pig???</h2>
+  <p>Pig es un juego simple de asociación de palabras donde los jugadores compiten para ser los primeros en enlazar con la palabra pig en secuencia sin ser eliminados y dentro del límite de tiempo. Si una palabra tiene alguna conexión con la palabra anterior, se establece en las reglas, aunque en última instancia depende del colectivo decidir a través de discusión y debate.</p>
+</div>
+<div id="intro">
+  <div class="textBox">
+    <h3>Contenido:</h3>
+    <ol>
+      <li><a href="#law1">Ley 1 - El Inicio del Juego</a></li>
+      <li><a href="#law2">Ley 2 - Eliminación</a></li>
+      <li><a href="#law3">Ley 3 - Recuperación</a></li>
+      <li><a href="#law4">Ley 4 - Fuera de Juego</a></li>
+      <li><a href="#law5">Ley 5 - Faltas</a></li>
+      <li><a href="#law6">Ley 6 - Jugadas Poderosas</a></li>
+      <li><a href="#law7">Ley 7 - Cambios</a></li>
+      <li><a href="#law8">Ley 8 - Fin del Juego</a></li>
+      <li><a href="#vars">Variaciones</a></li>
+    </ol>
+  </div>
+  <div class="textBox">
+    <h3>Otra Información:</h3>
+    <h4>Línea de Apoyo de Pig:</h4>
+    <p id="phoneNumber">07564 177485</p>
+    <h4>Créditos:</h4>
+    <ul>
+      <li>Creador/Escritor Principal: <b>Will Moores</b></li>
+      <li>Editor/Escritor/Visionario/Legendario: <b>Jonny Moores</b></li>
+      <li>Veterano/Escritor: <b>Lizzie Moores</b></li>
+      <li>Desarrollador Web: <b>Archie Saunders</b></li>
+    </ul>
+  </div>
+</div>
+<div class="textBlock">
+  <h2 id="law1">Ley 1:<br>El Inicio del Juego</h2>
+  <ol class="list">
+    <li>
+      <h3>Lanzamiento de Moneda</h3>
+      <ul class="list">
+        <li>Para decidir quién juega primero (en un juego de 2 jugadores), los jugadores deben realizar un lanzamiento de moneda.</li>
+        <li>Los jugadores deben seleccionar cara o cruz de pig, y el ganador decide quién empieza.</li>
+        <li>En el caso de un juego con más de dos jugadores, el jugador que haya comido cerdo más recientemente elige quién empieza - es el ‘gran seleccionador’.</li>
+        <li>El ‘gran seleccionador’ puede cambiar su elección de persona para comenzar en una ocasión si no está satisfecho con la palabra inicial.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Comenzar a Jugar</h3>
+      <ul class="list">
+        <li>Un jugador puede comenzar con cualquier palabra excepto pig, siempre que la palabra no sea una falta.</li>
+        <li>Una palabra debe ser preferiblemente un objeto, lugar, persona o concepto, aunque no necesariamente.</li>
+        <li>Si se comete una falta en la palabra inicial, el turno se anula y se otorga una obstrucción temporal según las reglas, excepto en la primera selección del gran seleccionador, quien puede decidir no penalizar y seleccionar otro jugador para comenzar.</li>
+        <li>Si se comete una falta en la segunda palabra inicial, la falta se penaliza y el juego comienza con una palabra de jugada poderosa seleccionada al azar.</li>
+        <li>Un jugador no puede ajustar su palabra inicial.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Admisión al Juego</h3>
+      <ul class="list">
+        <li>No está permitido unirse al juego después del lanzamiento de moneda o discusión de consumo de cerdo.</li>
+        <li>No se permite a los animales jugar.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law2">Ley 2:<br>Eliminación</h2>
+  <ol class="list">
+    <li>
+      <h3>Repetición</h3>
+      <ul class="list">
+        <li>La repetición de una palabra resulta en eliminación.</li>
+        <li>Esto incluye palabras dentro de frases o combinaciones de palabras, pero no palabras encontradas dentro de otras palabras.</li>
+        <li>También incluye la palabra pig, si se repite pig en una respuesta presentada, el jugador queda eliminado. En este caso nadie puede ganar y el juego se convierte en una guerra de desgaste.</li>
+        <li>Las versiones plural y singular de la misma palabra se tratan como la misma, excepto en referencia a un cambio, donde se considera la versión de la palabra pronunciada por el jugador.</li>
+        <li>No se puede penalizar la repetición después del turno del infractor, si el juego ha continuado.</li>
+        <li>La repetición no se aplica a artículos o calificadores.</li>
+        <li>Pig es un juego fonético, los homónimos se tratan como la misma palabra, y la repetición fonética de una palabra, u homónimo, resulta en eliminación.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Vinculación Fallida</h3>
+      <ul class="list">
+        <li>Si un jugador dice una palabra que no enlaza y luego repite este error al intentar ajustar, queda eliminado.</li>
+        <li>Una respuesta es aceptable si hay un enlace claro, demostrable y específico entre la palabra anterior y la actual.</li>
+        <li>Se permite que los enlaces se basen en errores comunes y/o estereotipos si están ampliamente aceptados.</li>
+        <li>Se permiten enlaces homofóbicos/homónimos. Por ejemplo, si un jugador dice la palabra Feria, el siguiente jugador puede interpretarla como Destino y pivotar el juego en otra dirección.</li>
+        <li>Enlaces históricos como todos los animales, colores de los cerdos y el agua son aceptables en interés de la competencia y en conformidad con el espíritu e historia del juego.</li>
+        <li>Si intentas enlazar a pig y fallas, la penalización es una obstrucción temporal de cuatro turnos, a menos que haya solo 2 jugadores, en cuyo caso es de 2 turnos.</li>
+        <li>Si un jugador realiza un enlace amplio e impreciso, recibe una advertencia.</li>
+        <li>Dos advertencias resultan en una obstrucción temporal de 3 turnos, tres advertencias en 4 turnos, y cuatro advertencias en eliminación.</li>
+        <li>No se pueden usar sinónimos que tengan el mismo significado que la palabra anterior como base para un enlace; esto resulta en obstrucción temporal.</li>
+        <li>La palabra debe ser pronunciada claramente y a un volumen adecuado, y debe haber al menos un testigo. Si no se cumplen estos requisitos, debe repetirse, de lo contrario el jugador queda eliminado.</li>
+        <li>El jugador debe jugar su turno cuando sea presionado, si se niega queda eliminado.</li>
+        <li>Si un jugador no entiende la palabra anterior, el remitente debe aclararla.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Olvido</h3>
+      <ul class="list">
+        <li>Si un jugador olvida la palabra anterior, su oponente puede optar por no recordársela.</li>
+        <li>En estas circunstancias, un jugador tiene el derecho de permanecer en silencio, sin ayuda y sin pistas.</li>
+        <li>El juego continúa y el jugador puede verse obligado a adivinar.</li>
+        <li>Si una palabra no enlaza después de una adivinación y un ajuste, el jugador queda eliminado.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Infracciones Indirectas</h3>
+      <ul class="list">
+        <li>Si un jugador estornuda más de dos veces en un juego, queda eliminado.</li>
+        <li>Si un jugador se traga una uva durante el juego, queda eliminado.</li>
+        <li>Si un jugador hace referencia dos veces a una película o programa de televisión, queda eliminado. Está permitido referirse a películas o programas, pero citar no es legal.</li>
+        <li>Si se mencionan todos los nombres de los seis personajes principales de Friends, el jugador que menciona el último nombre queda eliminado.</li>
+        <li>Si un jugador dice pierna tras wicket, queda eliminado.</li>
+        <li>Usar Google u otra asistencia externa está prohibido, a menos que todos estén de acuerdo en permitirlo.</li>
+        <li>Mentir está prohibido y puede resultar en eliminación.</li>
+        <li>Estas infracciones no se penalizan retroactivamente, excepto en casos de carrera en solitario.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sanciones</h3>
+      <ul class="list">
+        <li>Si un jugador es eliminado, no puede participar en el juego.</li>
+        <li>El jugador eliminado elige una palabra trampa y aplica la Ley 2 cuando sea necesario.</li>
+        <li>Si un jugador regresa tras eliminación, la palabra trampa sigue activa.</li>
+        <li>Un desafío falso resulta en obstrucción temporal de dos turnos.</li>
+        <li>La obstrucción temporal impide jugar por el número de turnos especificado.</li>
+        <li>Los jugadores eliminados aún pueden desafiar y señalar faltas.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>La Palabra Trampa</h3>
+      <ul class="list">
+        <li>Si un jugador dice la ‘palabra trampa’ elegida por un eliminado, queda eliminado y el jugador eliminado vuelve al juego.</li>
+        <li>Si una obstrucción temporal excede 15 turnos, el jugador debe crear una palabra trampa. Si alguien la dice, intercambian posiciones y el tiempo de obstrucción.</li>
+        <li>Si una palabra trampa está en la lista de jugadas poderosas, el creador recibe un punto extra.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law3">Ley 3:<br>Recuperación</h2>
+  <ol class="list">
+    <li>
+      <h3>Ajuste</h3>
+      <ul class="list">
+        <li>Un ajuste permite cambiar tu respuesta original para evitar una falta, como parte de una estrategia o si el colectivo la juzga insuficiente.</li>
+        <li>Un jugador puede ajustar su respuesta mientras el oponente no enlace a pig.</li>
+        <li>No se permite ajustar después de una falta penalizada.</li>
+        <li>Solo se puede ajustar una vez.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Salvadas</h3>
+      <ul class="list">
+        <li>Un jugador puede ‘salvar’ una palabra problemática agregando algo rápidamente, como ‘Spider’ convirtiéndose en ‘Spider-man’.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law4">Ley 4:<br>Fuera de Juego</h2>
+  <ol class="list">
+    <li>
+      <h3>Infracción de Fuera de Juego</h3>
+      <ul class="list">
+        <li>Un jugador puede estar fuera de juego si su palabra tiene la misma 3ª letra que la anterior.</li>
+        <li>Se llama por oponentes y se evalúa colectivamente.</li>
+        <li>Un jugador puede estar fuera de juego en su propia respuesta.</li>
+        <li>Si el turno sigue después del fuera de juego, no se penaliza.</li>
+        <li>No se permite estar fuera de juego con relación a pig.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sanciones de Fuera de Juego</h3>
+      <ul class="list">
+        <li>El fuera de juego resulta en obstrucción temporal de dos turnos en juegos con más de dos jugadores.</li>
+        <li>En juegos de dos, solo un turno. El jugador restante continúa.</li>
+        <li>Si un jugador está fuera de juego, su turno se anula y el juego sigue desde la palabra anterior.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law5">Ley 5:<br>Faltas</h2>
+  <ol class="list">
+    <li>
+      <h3>Enlace Doble</h3>
+      <ul class="list">
+        <li>Un enlace doble es cuando hay un vínculo no declarado entre una respuesta y la anterior, resultando en obstrucción temporal de un turno.</li>
+        <li>El enlace triple resulta en eliminación.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Enlace Basado en Rima</h3>
+      <ul class="list">
+        <li>Los enlaces de rima usualmente resultan en falta y obstrucción temporal de dos turnos, salvo al enlazar con pig.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Antónimos</h3>
+      <ul class="list">
+        <li>Los antónimos pueden usarse como enlace a la palabra anterior, pero no a pig.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Faltas Múltiples</h3>
+      <ul class="list">
+        <li>Dos faltas en un turno resultan en obstrucción temporal de cuatro turnos; tres faltas, en quince turnos; y cuatro faltas, en eliminación.</li>
+        <li>Las obstrucciones se suman.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Faltas Indirectas</h3>
+      <ul class="list">
+        <li>Si presentas una palabra fuera de turno, recibes obstrucción temporal de 19 turnos.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sanciones de Faltas</h3>
+      <ul class="list">
+        <li>Si un jugador comete una falta, su turno se anula y el juego sigue desde la palabra anterior.</li>
+        <li>Se otorga obstrucción temporal según las reglas.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law6">Ley 6:<br>Jugadas Poderosas</h2>
+  <ol class="list">
+    <li>
+      <h3>Jugadas Basadas en Palabras</h3>
+      <ul class="list">
+        <li>Usar una palabra de la lista de jugadas poderosas se considera una ‘jugada poderosa’ y da dos puntos de bonificación.</li>
+        <li>La lista de jugadas poderosas incluye:
+          <ul id="powerList">
+            <li>Madera</li>
+            <li>Manzana</li>
+            <li>Peluca</li>
+            <li>George Lucas</li>
+            <li>Burgués</li>
+            <li>Rama</li>
+            <li>Carne de Res</li>
+            <li>Damisela</li>
+            <li>Árbol</li>
+            <li>Angustiante</li>
+            <li>Elfo</li>
+            <li>Sueño</li>
+            <li>Duende</li>
+            <li>Malabarista</li>
+            <li>División</li>
+            <li>Humphrey Bogart</li>
+          </ul>
+        </li>
+        <li>Una invocación falsa de jugada poderosa resulta en obstrucción temporal de 15 turnos.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law7">Ley 7:<br>Cambios</h2>
+  <ol class="list">
+    <li>
+      <h3>Cambio de Duque de Wellington</h3>
+      <ul class="list">
+        <li>Si dos palabras consecutivas terminan en las mismas dos letras, se puede invocar este cambio para revertir el orden de juego.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Cambio de Lord Palmer</h3>
+      <ul class="list">
+        <li>Si un jugador dice una palabra que comienza con Q, se puede invocar este cambio para elegir otra palabra.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>El Cambio Real</h3>
+      <ul class="list">
+        <li>Decir un palíndromo permite invocar este cambio para eliminar un jugador.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Cambio de Menyama</h3>
+      <ul class="list">
+        <li>Si tres palabras seguidas terminan en la misma letra, este cambio permite bloquear temporalmente a otros o regresar a un jugador eliminado.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Cambio de St Martin</h3>
+      <ul class="list">
+        <li>Nombrar cuatro co-estrellas permite bloquear a un jugador a elección.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Cambios</h3>
+      <ul class="list">
+        <li>No se pueden invocar cambios retroactivamente.</li>
+        <li>Invocar falsamente un cambio resulta en obstrucción temporal de tres turnos.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law8">Ley 8:<br>Fin del Juego</h2>
+  <ol class="list">
+    <li>
+      <h3>Determinando el Resultado</h3>
+      <ul class="list">
+        <li>Un jugador gana si encuentra un enlace con pig sin faltas y en el orden correcto, o si es el único jugador restante.</li>
+        <li>El juego termina oficialmente cuando un jugador grita pig con un enlace válido y sin faltas.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Límite de Tiempo</h3>
+      <ul class="list">
+        <li>Un juego de Pig debe durar un máximo de ocho horas.</li>
+        <li>Si pasa el límite, se resuelve con una pelea física hasta que uno se rinda o muera.</li>
+        <li>Si ninguno se rinde o muere tras cuarenta semanas, el que tenga más puntos gana.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="vars">Variaciones:</h2>
+  <p>A continuación se presentan diferentes variaciones de las reglas de pig diseñadas por jugadores históricos:</p>
+  <ul class="list">
+    <li class="varList">
+      <h3>Reglas de Stroitgeff</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que solo se pueden usar mamíferos y colores en los enlaces históricos a pig.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Greta</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que solo se pueden usar animales de granja en los enlaces históricos a pig.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Minsk</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que solo se aplican mamíferos y el color rosa como enlaces históricos.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Mozart</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que se permiten enlaces de rima.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Bunson</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que todas las obstrucciones son el doble de severas.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Benson</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que las obstrucciones se reducen a la mitad.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Mandela</h3>
+      <p>Idénticas a las Reglas de Churchill excepto por la adición de dos principios finales, los de club de la pelea; quien los rompa queda eliminado.</p>
+    </li>
+    <li class="varList">
+      <h3>Kris Clásico</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que los jugadores intentan enlazar con Kris Jenner en lugar de pig.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Troitzcech</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que los jugadores intentan enlazar con aeroplano y pig.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Spoindel</h3>
+      <p>Idénticas a las Reglas de Napoleón excepto que los jugadores tienen un límite de tiempo de 20 segundos por turno.</p>
+    </li>
+    <li class="varList">
+      <h3>Reglas de Napoleón</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que no hay cambios, fuera de juego, obstrucciones temporales, ajustes, jugadas poderosas o infracciones indirectas y solo las repeticiones resultan en eliminación.</p>
+    </li>
+    <li class="varList">
+      <h3>Rendición de Melville</h3>
+      <p>Idénticas a las Reglas de Churchill excepto que todas las obstrucciones se triplican, no hay ajustes, y cualquier falta resulta en eliminación. Hay un límite de 20 segundos por turno y se dañan cerdos reales.</p>
+    </li>
+    <li class="varList">
+      <h3>Blitzkrieg Pig</h3>
+      <p>Idénticas a las Reglas de Napoleón excepto que los jugadores tienen un límite de tiempo de 15 segundos por turno.</p>
+    </li>
+  </ul>
+</div>
+</body>
+
+<footer id="footerId" class="bar">
+  <div id="footerName">
+    <p>Sitio desarrollado por <b>Archie Saunders</b></p>
+  </div>
+  <div id="footerNotes">
+    <p>Tenga en cuenta que todo en este sitio web es para efectos cómicos y no debe tomarse en serio.</p>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pig Das Spiel</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../images/pigture.png">
+</head>
+
+<header class="bar">
+  <div id="logo">
+    <a href="./">
+      <img id="pigture" src="../images/pigture.png" alt="Das Logo von 'Pig Das Spiel'">
+    </a>
+    <h1 class="title">PIG!</h1>
+  </div>
+  <div id="boxDiv">
+    <label for="languageBox">Sprache:</label>
+    <select id="languageBox">
+      <option value="./">Deutsch</option>
+      <option value="../">English</option>
+      <option value="../fr">Français</option>
+      <option value="../es">Español</option>
+
+    </select>
+  </div>
+  <script src="../js/languageScript.js"></script>
+</header>
+
+<body>
+<div class="textBlock">
+  <h2>Was ist Pig???</h2>
+  <p>Pig ist ein einfaches Wort-Assoziationsspiel, bei dem die Spieler darum konkurrieren, als Erster das Wort pig in einer Sequenz zu verknüpfen, ohne eliminiert zu werden und innerhalb der Zeitbegrenzung zu bleiben. Ob ein Wort eine Verbindung zum vorherigen Wort hat, wird in den Regeln erläutert, aber letztlich entscheidet die Gruppe durch Diskussion und Debatte.</p>
+</div>
+<div id="intro">
+  <div class="textBox">
+    <h3>Inhalt:</h3>
+    <ol>
+      <li><a href="#law1">Regel 1 - Der Spielbeginn</a></li>
+      <li><a href="#law2">Regel 2 - Eliminierung</a></li>
+      <li><a href="#law3">Regel 3 - Erholung</a></li>
+      <li><a href="#law4">Regel 4 - Abseits</a></li>
+      <li><a href="#law5">Regel 5 - Fouls</a></li>
+      <li><a href="#law6">Regel 6 - Power Plays</a></li>
+      <li><a href="#law7">Regel 7 - Shifts</a></li>
+      <li><a href="#law8">Regel 8 - Spielende</a></li>
+      <li><a href="#vars">Variationen</a></li>
+    </ol>
+  </div>
+  <div class="textBox">
+    <h3>Weitere Informationen:</h3>
+    <h4>Pig Support Hotline:</h4>
+    <p id="phoneNumber">07564 177485</p>
+    <h4>Credits:</h4>
+    <ul>
+      <li>Erfinder/Hauptautor: <b>Will Moores</b></li>
+      <li>Redakteur/Autor/Visionär/Legende: <b>Jonny Moores</b></li>
+      <li>Veteran/Autorin: <b>Lizzie Moores</b></li>
+      <li>Web-Entwickler: <b>Archie Saunders</b></li>
+    </ul>
+  </div>
+</div>
+<div class="textBlock">
+  <h2 id="law1">Regel 1:<br>Der Spielbeginn</h2>
+  <ol class="list">
+    <li>
+      <h3>Münzwurf</h3>
+      <ul class="list">
+        <li>Um zu entscheiden, wer zuerst spielt (bei einem Spiel mit 2 Spielern), müssen die Spieler einen Münzwurf durchführen.</li>
+        <li>Die Spieler müssen entweder „Schweinskopf“ oder „Schweineschwanz“ wählen, und der Gewinner entscheidet, welcher Spieler anfangen darf.</li>
+        <li>In einem Spiel mit mehr als zwei Spielern darf der Spieler, der zuletzt Schweinefleisch gegessen hat, den Startspieler bestimmen – er ist der „Groß selektor“.</li>
+        <li>Der „Groß selektor“ kann seine Wahl des Startspielers einmal ändern, wenn er mit dem Startwort unzufrieden ist.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Spielbeginn</h3>
+      <ul class="list">
+        <li>Ein Spieler kann mit jedem Wort außer pig beginnen, solange die Einreichung kein Foul ist.</li>
+        <li>Ein Wort sollte vorzugsweise ein Objekt, Ort, Person oder Konzept sein, aber das ist nicht zwingend erforderlich.</li>
+        <li>Wenn ein Foul begangen wird, wird der Zug annulliert und eine vorübergehende Sperre verhängt, wie in den Regeln festgelegt. Dies gilt jedoch nicht, wenn der Groß selektor entscheidet, den Spieler zu verschonen und eine andere Person zum Spielbeginn auszuwählen.</li>
+        <li>Wenn ein Foul beim zweiten Startwort begangen wird, das der Groß selektor ausgewählt hat, wird das Foul bestraft, und das Spiel beginnt mit einem zufällig ausgewählten Power-Wort.</li>
+        <li>Ein Spieler kann sein Startwort nicht anpassen.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Zulassung zum Spiel</h3>
+      <ul class="list">
+        <li>Sie dürfen dem Spiel nach dem Münzwurf oder der Schweinefleisch-Diskussion nicht beitreten.</li>
+        <li>Tiere dürfen nicht spielen.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law2">Regel 2:<br>Eliminierung</h2>
+  <ol class="list">
+    <li>
+      <h3>Wiederholung</h3>
+      <ul class="list">
+        <li>Die Wiederholung eines Wortes führt zur Eliminierung.</li>
+        <li>Dies gilt für Wörter in Phrasen oder Wortkombinationen, jedoch nicht für Wörter innerhalb anderer Wörter.</li>
+        <li>Dies schließt auch das Wort pig ein; wenn pig in einer Antwort wiederholt wird, wird der Spieler eliminiert. In diesem Fall kann niemand gewinnen und das Spiel wird zu einem Kampf der Ausdauer.</li>
+        <li>Plural- und Singularformen desselben Wortes werden als gleich behandelt, außer in Bezug auf einen Shift, in dem Fall werden sie als die Version des Wortes angesehen, wie sie vom Spieler ausgesprochen wurde.</li>
+        <li>Wiederholungen können nach dem Zug des Täters nicht mehr bestraft werden, wenn das Spiel fortgesetzt wurde.</li>
+        <li>Artikel oder Qualifikatoren zählen nicht als Wiederholung.</li>
+        <li>Pig ist ein phonetisches Spiel; Homonyme werden als dasselbe Wort behandelt, und die phonetische Wiederholung eines Wortes oder Homonyms führt zur Eliminierung.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Fehlgeschlagener Link</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler ein Wort sagt, das keinen Link darstellt und diesen Fehler beim Anpassen wiederholt, wird er eliminiert.</li>
+        <li>Eine Einreichung ist akzeptabel, wenn es eine klare, nachweisbare, empirische Verbindung zum vorherigen Wort gibt und diese Verbindung spezifisch für die beiden Einreichungen ist und nicht zu allgemein.</li>
+        <li>Links können auf allgemeinen Missverständnissen oder Stereotypen basieren, wenn sie weit verbreitet sind.</li>
+        <li>Homophone/Homonymische Links sind erlaubt. Beispielsweise, wenn ein Spieler das Wort „Fest“ sagt, kann der nächste Spieler es als „Schicksal“ interpretieren und so die Spielrichtung ändern.</li>
+        <li>Historische Links wie Tiere, Schweinefarben und Wasser sind im Sinne des Wettbewerbs und in Übereinstimmung mit dem Geist und der Geschichte des Spiels akzeptabel.</li>
+        <li>Wenn Sie versuchen, pig zu verlinken und scheitern, beträgt die Strafe eine vorübergehende Sperre von vier Zügen, es sei denn, es spielen nur 2 Spieler, dann beträgt die Sperre 2 Züge.</li>
+        <li>Wenn ein Spieler einen zu allgemeinen Link verwendet, erhält er eine Verwarnung.</li>
+        <li>Zwei Verwarnungen führen zu einer Sperre von 3 Zügen, drei Verwarnungen zu einer Sperre von 4 Zügen, und vier Verwarnungen führen zur Eliminierung.</li>
+        <li>Synonyme, die im Wesentlichen dieselbe Bedeutung wie das vorherige Wort haben, dürfen nicht als Grundlage für einen Link verwendet werden. Ein Link durch Synonymie führt beim ersten Verstoß zu einer Sperre von einem Zug, beim zweiten zu 4 Zügen, beim dritten zu 16 Zügen und so weiter durch Multiplikationen von 4.</li>
+        <li>Eine Einreichung muss klar und in einer geeigneten Lautstärke ausgesprochen werden und mindestens einen Zeugen haben. Andernfalls muss sie wiederholt werden, oder der Spieler wird eliminiert.</li>
+        <li>Ein Spieler muss seinen Zug machen, wenn er aufgefordert wird; verweigert er, wird er eliminiert.</li>
+        <li>Wenn ein Spieler das vorherige Wort nicht versteht, muss er sich vom vorherigen Einreicher aufklären lassen.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Vergesslichkeit</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler das vorhergehende Wort vergisst, kann sein Gegner entscheiden, diese Information zurückzuhalten.</li>
+        <li>Unter diesen Umständen hat ein Spieler das Recht, still zu bleiben, nicht zu helfen und keine Hinweise zu geben.</li>
+        <li>Das Spiel geht normal weiter, und der Spieler kann gezwungen sein, auf gut Glück zu raten.</li>
+        <li>Wenn das Wort des Spielers nach einem Ratespiel keinen Link herstellt und auch bei einer Anpassung fehlschlägt, wird er eliminiert.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Indirekte Verstöße</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler mehr als zweimal in einem Spiel niest, wird er eliminiert.</li>
+        <li>Wenn ein Spieler während des Spiels eine Traube verschluckt, wird er eliminiert.</li>
+        <li>Wenn ein Spieler während des Spiels mehr als zweimal auf einen Film oder eine TV-Show anspielt, wird er eliminiert. Zum Beispiel: „Auf deiner linken Seite“. Es ist erlaubt, auf Filme oder TV-Shows zu verweisen, aber ein spezifisches Zitat daraus ist illegal.</li>
+        <li>Wenn die Vornamen aller sechs Hauptcharaktere aus „Friends“ erwähnt werden, wird der Spieler eliminiert, der den letzten Namen genannt hat.</li>
+        <li>Wenn ein Spieler das Wort „Bein“ nach dem Wort „Wicket“ einreicht, wird er eliminiert.</li>
+        <li>Die Verwendung von Google oder anderen Suchmaschinen oder sonstiger externer Hilfe sind verboten, außer es wird von allen Spielern erlaubt.</li>
+        <li>Lügen ist ausdrücklich verboten und kann zur Eliminierung führen.</li>
+        <li>Diese Verstöße können nicht rückwirkend bestraft werden, außer bei Solo-Runs, wenn ein Spieler allein spielt, da alle anderen blockiert sind.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Strafen</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler eliminiert wird, darf er nicht am offenen Spiel teilnehmen.</li>
+        <li>Der eliminierte Spieler muss ein „Fallenwort“ auswählen und dann Regel 2 Eliminierungen Abschnitt 6a bei Bedarf durchsetzen.</li>
+        <li>Falls ein Spieler nach einer erfolgreichen Invokation von Menyarmas Shift das Spiel wieder betritt, bleibt das ausgewählte Fallenwort aktiv.</li>
+        <li>Eine falsche Herausforderung führt zu einer vorübergehenden Sperre von zwei Zügen.</li>
+        <li>Wenn ein Spieler vorübergehend gesperrt ist, wird er für die Anzahl der Sperrzüge blockiert.</li>
+        <li>Eliminierte Spieler dürfen weiterhin Fouls anfechten und auf sie aufmerksam machen.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Das Fallenwort</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler das „Fallenwort“ sagt, das von einem eliminierten Spieler gewählt wurde, wird der Verursacher eliminiert, und der Spieler, der das Fallenwort festlegte, kehrt ins Spiel zurück.</li>
+        <li>Falls ein Spieler eine Sperre von mehr als 15 Zügen erhält, muss er ein Fallenwort festlegen. Wenn dieses Wort während seiner Sperre gesagt wird, tauschen der Verursacher und der gesperrte Spieler die Plätze.</li>
+        <li>Wenn ein Fallenwort auf der Liste der mächtigen Spielzüge steht, erhält der Spieler mit dem Fallenwort einen Bonuspunkt.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law3">Regel 3:<br>Erholung</h2>
+  <ol class="list">
+    <li>
+      <h3>Anpassung</h3>
+      <ul class="list">
+        <li>Eine Anpassung ist der Akt, die ursprüngliche Einreichung zu ändern, möglicherweise um ein erkanntes Foul zu vermeiden, als Teil eines größeren Spielplans oder weil das Kollektiv den ursprünglichen Link als unzureichend ansieht.</li>
+        <li>Ein Spieler kann seine eingereichte Antwort anpassen, solange der/die Gegenspieler den Link zum Wort pig nicht gefunden haben.</li>
+        <li>Ein Spieler kann seine Einreichung anpassen, wenn das Kollektiv seinen ursprünglichen Link als unzureichend beurteilt.</li>
+        <li>Ein Spieler darf nach einem bestraften Foul keine Anpassung vornehmen, da sein Zug annulliert wird und eine vorübergehende Sperre verhängt wird.</li>
+        <li>Ein Spieler kann sein Wort nur einmal anpassen und darf nicht zum ursprünglichen Wort zurückkehren.</li>
+        <li>Wenn ein Spieler bei seiner Anpassung ein Foul begeht oder die Anpassung nicht verlinkt, darf er nicht erneut anpassen und wird eliminiert.</li>
+        <li>Eine Anpassung des Links zählt als Anpassung.</li>
+        <li>Ein Spieler darf sein Startwort nicht anpassen.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Rettungen</h3>
+      <ul class="list">
+        <li>Ein Spieler kann ein problematisches Wort schnell „retten“, indem er sofort etwas hinzufügt. Zum Beispiel könnte ein Spieler „Spinne“, sagen und dann schnell, „mann“ hinzufügen, um „Spider-Man“ einzureichen, was weniger problematisch ist.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law4">Regel 4:<br>Abseits</h2>
+  <ol class="list">
+    <li>
+      <h3>Abseits-Verstoß</h3>
+      <ul class="list">
+        <li>Ein Spieler kann als Abseits betrachtet werden, wenn er ein Wort mit dem gleichen dritten Buchstaben wie das vorherige eingereichte Wort sagt.</li>
+        <li>Alle Abseitsverstöße werden von den Gegnern aufgerufen und vom Kollektiv bewertet.</li>
+        <li>Ein Spieler kann innerhalb seiner eigenen Einreichung Abseits sein, zum Beispiel: Zuckerstange.</li>
+        <li>Wenn ein Spieler aufgrund der Regel 4 Abseits Abschnitte 1a und 1c abseits ist, wird er eliminiert.</li>
+        <li>Wenn das Spiel über den Zug des abseitigen Spielers hinausgeht, kann er für dieses Foul nicht mehr bestraft werden.</li>
+        <li>Abseits ist eine Art Foul und wird als solches beurteilt.</li>
+        <li>Man kann nicht in Bezug auf pig Abseits sein.</li>
+        <li>Obwohl Pig ein phonetisches Spiel ist, werden in Bezug auf Abseits Wörter kontextuell als die Version betrachtet, die mit den vorherigen Wörtern assoziiert ist.</li>
+        <li>Im Falle mehrerer Homonyme, die mit dem vorherigen Wort assoziiert sind, darf der Spieler die für ihn bequemste Schreibweise wählen, solange die Assoziation stimmig ist.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Abseits-Strafen</h3>
+      <ul class="list">
+        <li>Abseits führt zu einer „vorübergehenden Sperre“ für zwei Züge bei Spielen mit mehr als zwei Spielern.</li>
+        <li>Die vorübergehende Sperre gilt auch in einem Spiel mit zwei Spielern, jedoch nur für einen Zug. Der verbleibende Spieler setzt seinen Versuch fort, zu gewinnen.</li>
+        <li>Wenn ein Spieler beim Abseits erwischt wird, wird sein Zug annulliert und das Spiel setzt bei der vorherigen Einreichung fort.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law5">Regel 5:<br>Fouls</h2>
+  <ol class="list">
+    <li>
+      <h3>Doppel-Link</h3>
+      <ul class="list">
+        <li>Ein Doppel-Link tritt auf, wenn ein Spieler eine undeutliche Verbindung zwischen seiner Einreichung und der vorherigen herstellt. Wenn beispielsweise ein Spieler auf das Wort „Rind“ mit „Schwein“ antwortet, indem er argumentiert, dass Rind sich auf Kuh bezieht und Kuh auf Schwein, dann gibt es zwei Sprünge zwischen Wörtern statt nur einem. Ein Doppel-Link, wenn offensichtlich, führt zu einer Sperre von einem Zug.</li>
+        <li>Ein Dreifach-Link, ein Doppel-Link mit einem weiteren Link, führt zur Eliminierung.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Rim-Basierte Links</h3>
+      <ul class="list">
+        <li>Wörter können normalerweise nicht aufgrund von Reimen verknüpft werden; dies führt zu einem Foul und einer Sperre von zwei Zügen.</li>
+        <li>Rim-basierte Links sind jedoch erlaubt, wenn Sie direkt mit dem Wort pig verknüpfen.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Antonyme</h3>
+      <ul class="list">
+        <li>Antonyme können als Link zum vorherigen Wort verwendet werden.</li>
+        <li>Dies gilt jedoch nicht für das Wort pig, da es kein klares Antonym hat.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Mehrfache Fouls</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler in einem Zug zwei Fouls oder Abseits begeht, ist dies ein Doppel-Foul, und er wird für vier Züge gesperrt.</li>
+        <li>Ein Dreifach-Foul führt zu einer Sperre von fünfzehn Zügen.</li>
+        <li>Ein Vierfach-Foul führt zur Eliminierung.</li>
+        <li>Alle Sperren summieren sich; jede zusätzliche Sperre erhöht lediglich die bestehenden Sperren.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Indirekte Fouls</h3>
+      <ul class="list">
+        <li>Wenn Sie eine Einreichung außerhalb der Reihe machen, werden Sie für 19 Züge gesperrt.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Foul-Strafen</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler ein Foul begeht, wird sein Zug annulliert und das Spiel setzt beim vorherigen Wort fort.</li>
+        <li>Eine vorübergehende Sperre wird dann entsprechend den Regeln verhängt.</li>
+        <li>Fouls können nicht rückwirkend bestraft werden, außer bei Solo-Runs, wenn ein Spieler allein spielt und alle anderen gesperrt sind.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law6">Regel 6:<br>Power Plays</h2>
+  <ol class="list">
+    <li>
+      <h3>Wortbasierte Power Plays</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler ein Wort aus der Power-List mächtiger Züge verwendet, gilt dies als „Power Play“.</li>
+        <li>
+          Die Power-List der mächtigen Züge lautet wie folgt:
+          <ul id="powerList">
+            <li>Holz</li>
+            <li>Apfel</li>
+            <li>Perücke</li>
+            <li>George Lucas</li>
+            <li>Bourgeois</li>
+            <li>Zweig</li>
+            <li>Rind</li>
+            <li>Jungfer</li>
+            <li>Baum</li>
+            <li>Not</li>
+            <li>Elf</li>
+            <li>Traum</li>
+            <li>Sprite</li>
+            <li>Jongleur</li>
+            <li>Teilung</li>
+            <li>Humphrey Bogart</li>
+          </ul>
+        </li>
+        <li>Jedes Power Play bringt zwei Bonuspunkte (halbe Punkte werden abgerundet).</li>
+        <li>Eine falsche Power-Play-Invocation führt zu einer Sperre von 15 Zügen.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law7">Regel 7:<br>Shifts</h2>
+  <ol class="list">
+    <li>
+      <h3>Duke Wellington's Shift</h3>
+      <ul class="list">
+        <li>Wenn zwei aufeinanderfolgende Einreichungen dieselben letzten zwei Buchstaben haben, hat ein Spieler das Recht, diesen Shift aufzurufen.</li>
+        <li>Ein Spieler darf diesen Shift nicht aufrufen, wenn er die letzte Einreichung selbst ausgesprochen hat.</li>
+        <li>Dieser Shift, wenn aufgerufen, kehrt die Reihenfolge des Spiels um.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Lord Palmer's Shift</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler ein Wort mit dem Buchstaben Q einreicht, kann dieser Shift aufgerufen werden.</li>
+        <li>Ein Spieler darf diesen Shift nicht aufrufen, wenn er die Einreichung mit Q selbst ausgesprochen hat.</li>
+        <li>Dieser Shift, wenn aufgerufen, gibt dem Invoker die Möglichkeit, das Spiel mit einem Wort seiner Wahl neu zu beginnen.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Der königliche Shift</h3>
+      <ul class="list">
+        <li>Wenn ein Spieler ein Palindrom ausspricht, kann dieser Shift aufgerufen werden.</li>
+        <li>Ein Spieler darf diesen Shift nicht aufrufen, wenn er das Palindrom selbst gesagt hat.</li>
+        <li>Dieser Shift gibt dem Invoker die Möglichkeit, einen Spieler seiner Wahl zu eliminieren.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Menyama's Shift</h3>
+      <ul class="list">
+        <li>Wenn drei aufeinanderfolgende Einreichungen mit demselben Buchstaben enden, kann dieser Shift aufgerufen werden.</li>
+        <li>Ein Spieler darf diesen Shift nicht aufrufen, wenn er die letzte Einreichung selbst ausgesprochen hat.</li>
+        <li>Wenn aufgerufen, blockiert dieser Shift alle anderen Spieler für drei Züge, wenn der Invoker im Spiel ist, oder erlaubt dem Invoker, wieder ins Spiel einzutreten, falls er eliminiert wurde.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Der Shift von St. Martin</h3>
+      <ul class="list">
+        <li>Wenn in offenem Spiel vier Co-Stars genannt werden, kann dieser Shift aufgerufen werden.</li>
+        <li>Ein Spieler darf diesen Shift nicht aufrufen, wenn er die letzte Einreichung geäußert hat.</li>
+        <li>Wenn aufgerufen, gibt dieser Shift dem Invoker das Recht, jemanden für vier Züge zu blockieren.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Shifts</h3>
+      <ul class="list">
+        <li>Shifts können nicht rückwirkend aufgerufen werden, wenn die Runde bereits vorbei ist.</li>
+        <li>Invokers müssen die ihnen gewährte Möglichkeit zum Zeitpunkt der Invocation nutzen oder gar nicht.</li>
+        <li>Eine falsche Invocation eines Shifts führt zu einer vorübergehenden Sperre von drei Zügen.</li>
+        <li>Alle vorübergehenden Sperren in Bezug auf Shifts werden in einem Spiel mit zwei Spielern halbiert (halbe Sperren werden immer abgerundet).</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law8">Regel 8:<br>Spielende</h2>
+  <ol class="list">
+    <li>
+      <h3>Ergebnisbestimmung</h3>
+      <ul class="list">
+        <li>Ein Spieler gewinnt, wenn er erfolgreich eine Verbindung zwischen dem vorherigen Wort und dem Wort pig gemäß den Regeln und in der richtigen Reihenfolge ohne Fouls herstellt oder wenn er als letzter verbleibender Spieler mit allen anderen eliminiert wurde.</li>
+        <li>Das Spiel endet offiziell, wenn ein Spieler triumphierend „pig“ ruft, mit einem gültigen Link und ohne begangene Fouls.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Zeitlimit</h3>
+      <ul class="list">
+        <li>Ein Spiel von Pig sollte maximal acht Stunden dauern.</li>
+        <li>Nach acht Stunden endet es in einem physischen Kampf, der erst endet, wenn alle außer einem Spieler aufgegeben oder gestorben sind.</li>
+        <li>Wenn keiner der Spieler nach 40 Wochen aufgibt oder stirbt, gewinnt der Spieler mit den meisten Punkten.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="vars">Variationen:</h2>
+  <p>Im Folgenden finden Sie verschiedene Regelvarianten von Pig, wie sie von historischen Spielern des Spiels entworfen wurden:</p>
+  <ul class="list">
+    <li class="varList">
+      <h3>Stroitgeff’s Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass nur Säugetiere und Farben als historische Links zu pig verwendet werden dürfen.</p>
+    </li>
+    <li class="varList">
+      <h3>Gretas Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass nur Nutztiere als historische Links zu pig verwendet werden dürfen.</p>
+    </li>
+    <li class="varList">
+      <h3>Minsker Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass keine historischen Links gelten, außer Säugetiere und die Farbe Rosa.</p>
+    </li>
+    <li class="varList">
+      <h3>Mozarts Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass rim-basierte Links erlaubt sind.</p>
+    </li>
+    <li class="varList">
+      <h3>Bunsons Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass alle Sperren doppelt so streng sind.</p>
+    </li>
+    <li class="varList">
+      <h3>Bensons Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass Sperren halbiert werden (alle halben Sperren werden abgerundet).</p>
+    </li>
+    <li class="varList">
+      <h3>Mandelas Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass zwei grundlegende Prinzipien hinzugefügt wurden, diese stammen aus den Regeln des Fight Clubs. Wer diese Regeln bricht, wird eliminiert.</p>
+    </li>
+    <li class="varList">
+      <h3>Kris Classic</h3>
+      <p>Identisch mit Churchills Regeln, außer dass die Spieler versuchen, zu Kris Jenner statt zu pig zu verlinken.</p>
+    </li>
+    <li class="varList">
+      <h3>Troitzcech’s Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass die Spieler versuchen, sowohl zu „Flugzeug“ als auch zu pig zu verlinken.</p>
+    </li>
+    <li class="varList">
+      <h3>Spoindels Regeln</h3>
+      <p>Identisch mit Napoleons Regeln, außer dass die Spieler auf jede Runde eine Zeitbegrenzung von 20 Sekunden haben.</p>
+    </li>
+    <li class="varList">
+      <h3>Napoleons Regeln</h3>
+      <p>Identisch mit Churchills Regeln, außer dass es keine Shifts, Abseits, vorübergehende Sperren, Anpassungen, Power Plays oder indirekte Verstöße gibt und nur Wiederholungen zur Eliminierung führen.</p>
+    </li>
+    <li class="varList">
+      <h3>Melvilles Version</h3>
+      <p>Identisch mit Churchills Regeln, außer dass jede Sperre verdreifacht wird, es keine Anpassungen gibt und jedes Foul zur Eliminierung führt. Es gibt außerdem eine 20-Sekunden-Zeitbegrenzung für jeden Zug, und echte Schweine werden verletzt.</p>
+    </li>
+    <li class="varList">
+      <h3>Blitzkrieg Pig</h3>
+      <p>Identisch mit Napoleons Regeln, außer dass jede Runde auf 15 Sekunden begrenzt ist.</p>
+    </li>
+  </ul>
+</div>
+</body>
+
+<footer id="footerId" class="bar">
+  <div id="footerName">
+    <p>Website entwickelt von <b>Archie Saunders</b></p>
+  </div>
+  <div id="footerNotes">
+    <p>Bitte beachten Sie, dass alles auf dieser Website humorvoll gemeint ist und nicht ernst genommen werden sollte.</p>
+  </div>
+</footer>
+
+</html>

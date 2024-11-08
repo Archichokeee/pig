@@ -107,7 +107,19 @@ p {
   border-width: 2px;
 }
 
-#footer {
+#footerId {
   margin-top: 30px;
   height: 75px;
+}
+
+#footerName {
+  margin-top: auto;
+  padding-left: 15px;
+}
+
+#footerNotes {
+  margin-left: auto;
+  margin-top: auto;
+  font-size: 10px;
+  padding-right: 5px;
 }

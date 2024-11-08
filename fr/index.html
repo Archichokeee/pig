@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
-  <title>Pig The Game</title>
+  <title>Pig Le Jeu</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../images/pigture.png">
 </head>
 
 <header class="bar">
   <div id="logo">
-    <a href="index.html">
-      <img id="pigture" src="../images/pigture.png" alt="The 'Pig The Game''s logo">
+    <a href="./">
+      <img id="pigture" src="../images/pigture.png" alt="Le logo de 'Pig Le Jeu'">
     </a>
     <h1 class="title">PIG!</h1>
   </div>
   <div id="boxDiv">
-    <label for="languageBox">Language:</label>
+    <label for="languageBox">Langue :</label>
     <select id="languageBox">
       <option value="./">Français</option>
       <option value="../">English</option>
-      <option value="de">Deutsch</option>
+      <option value="../de">Deutsch</option>
+      <option value="../es">Español</option>
     </select>
   </div>
   <script src="../js/languageScript.js"></script>
@@ -28,40 +29,418 @@
 
 <body>
 <div class="textBlock">
-  <h2>What is Pig???</h2>
-  <p>Pig est un jeu d'association de mots simple dans lequel les joueurs s'affrontent pour être le premier à créer un lien vers le mot cochon en séquence sans être éliminé et dans le temps imparti. La question de savoir si un mot a un lien avec le mot précédent est précisée dans les règles, même si c'est en fin de compte au collectif de décider par la discussion et le débat.</p>
+  <h2>Qu'est-ce que Pig ???</h2>
+  <p>Pig est un jeu d'association de mots simple où les joueurs rivalisent pour être les premiers à associer le mot pig en séquence sans être éliminés et dans le délai imparti. Si un mot a un lien avec le mot précédent est défini dans les règles, bien qu'en fin de compte, c'est au collectif de décider par le biais de discussions et de débats.</p>
 </div>
 <div id="intro">
   <div class="textBox">
-    <h3>Contents:</h3>
+    <h3>Contenu :</h3>
     <ol>
-      <li><a>Law 1 - The Start of Play</a></li>
-      <li><a>Law 2 - Elimination</a></li>
-      <li><a>Law 3 - Recovery</a></li>
-      <li><a>Law 4 - Offsides</a></li>
-      <li><a>Law 5 - Fouls</a></li>
-      <li><a>Law 6 - Power Plays</a></li>
-      <li><a>Law 7 - Shifts</a></li>
-      <li><a>Law 8 - The End of Play</a></li>
-      <li><a>Variations</a></li>
+      <li><a href="#law1">Loi 1 - Le Début du jeu</a></li>
+      <li><a href="#law2">Loi 2 - Élimination</a></li>
+      <li><a href="#law3">Loi 3 - Récupération</a></li>
+      <li><a href="#law4">Loi 4 - Hors-jeu</a></li>
+      <li><a href="#law5">Loi 5 - Fautes</a></li>
+      <li><a href="#law6">Loi 6 - Coups de Pouvoir</a></li>
+      <li><a href="#law7">Loi 7 - Déplacements</a></li>
+      <li><a href="#law8">Loi 8 - Fin du jeu</a></li>
+      <li><a href="#vars">Variantes</a></li>
     </ol>
   </div>
   <div class="textBox">
-    <h3>Other Information:</h3>
-    <h4>Pig Support Line:</h4>
+    <h3>Autres Informations :</h3>
+    <h4>Ligne de Support Pig :</h4>
     <p id="phoneNumber">07564 177485</p>
-    <h4>Credits:</h4>
+    <h4>Crédits :</h4>
     <ul>
-      <li>Creator/Lead Writer: <b>Will Moores</b></li>
-      <li>Editor/Writer/Visionary/Legend: <b>Jonny Moores</b></li>
-      <li>Veteran/writer: <b>Lizzie Moores</b></li>
+      <li>Créateur/Rédacteur Principal : <b>Will Moores</b></li>
+      <li>Éditeur/Rédacteur/Visionnaire/Légende : <b>Jonny Moores</b></li>
+      <li>Vétéran/rédactrice : <b>Lizzie Moores</b></li>
+      <li>Développeur Web : <b>Archie Saunders</b></li>
     </ul>
   </div>
 </div>
+<div class="textBlock">
+  <h2 id="law1">Loi 1 :<br>Le Début du jeu</h2>
+  <ol class="list">
+    <li>
+      <h3>Pile ou Face</h3>
+      <ul class="list">
+        <li>Pour décider qui joue en premier (dans un jeu à DEUX joueurs), les joueurs doivent faire un tirage au sort.</li>
+        <li>Les joueurs doivent choisir entre "face de cochon" ou "queue de cochon", et le gagnant décide du joueur qui commence.</li>
+        <li>En cas de jeu avec plus de deux joueurs, le joueur ayant mangé du porc le plus récemment choisit le joueur qui commence-t-il est le « grand sélecteur ».</li>
+        <li>Le « grand sélecteur » peut changer son choix de personne pour commencer une fois s'il n'est pas satisfait du mot de départ.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Commencer le jeu</h3>
+      <ul class="list">
+        <li>Un joueur peut commencer avec n'importe quel mot sauf pig, à condition que la soumission ne soit pas une faute.</li>
+        <li>Un mot doit de préférence être un objet, un lieu, une personne ou un concept, mais ce n'est pas obligatoire.</li>
+        <li>Si une faute est commise lors du mot de départ, le tour est annulé et une "blocance" temporaire est appliquée selon les règles, sauf si le grand sélecteur juge bon de l'épargner et de sélectionner un autre joueur pour commencer le jeu.</li>
+        <li>Si une faute est commise sur le deuxième mot de départ, comme choisi par le grand sélecteur, la faute est pénalisée et le jeu commence avec un mot de pouvoir choisi au hasard.</li>
+        <li>Un joueur ne peut pas modifier son mot de départ.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Admission au jeu</h3>
+      <ul class="list">
+        <li>Vous n'êtes pas autorisé à rejoindre le jeu après le tirage au sort ou la discussion sur la consommation de porc.</li>
+        <li>Aucun animal n'est autorisé à jouer.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law2">Loi 2 :<br>Élimination</h2>
+  <ol class="list">
+    <li>
+      <h3>Répétition</h3>
+      <ul class="list">
+        <li>La répétition d'un mot entraîne l'élimination.</li>
+        <li>Cela inclut les mots dans des phrases ou des combinaisons de mots, mais pas les mots trouvés dans d'autres mots.</li>
+        <li>Il inclut également le mot pig ; si pig est répété dans une réponse, le joueur est éliminé. Dans ce cas, personne ne peut gagner et le jeu devient une guerre d'usure.</li>
+        <li>Les versions plurielles et singulier d'un même mot sont traitées comme identiques, sauf dans le cas d'un déplacement, où elles sont considérées comme la version du mot prononcée par le joueur.</li>
+        <li>Aucune répétition ne peut être pénalisée après le tour de l'infracteur si le jeu continue.</li>
+        <li>La répétition ne s'applique pas aux articles ou qualificateurs.</li>
+        <li>Pig est un jeu phonétique ; les homonymes sont traités comme le même mot, et la répétition phonétique d'un mot ou d'un homonyme entraîne l'élimination.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Lien Manqué</h3>
+      <ul class="list">
+        <li>Si un joueur dit un mot qui ne se lie pas et répète cette erreur lors de l'ajustement, il est éliminé.</li>
+        <li>Une soumission est acceptable s'il y a un lien clair, démontrable et empirique avec le mot précédent, et si ce lien est relativement spécifique aux deux soumissions et pas trop large.</li>
+        <li>Les liens basés sur des malentendus ou des stéréotypes courants sont acceptables si largement partagés.</li>
+        <li>Les liens homophoniques ou homonymiques sont autorisés. Par exemple, si un joueur dit le mot "Fête", le joueur suivant peut l'interpréter comme "Fate", ce qui change la direction du jeu.</li>
+        <li>Les liens historiques comme tous les animaux, les couleurs de cochon et l'eau sont acceptables dans l'esprit de compétition et pour respecter l'esprit et l'histoire du jeu.</li>
+        <li>Si vous tentez un lien avec pig et échouez, la pénalité est une blocance temporaire de quatre tours, sauf s'il y a seulement deux joueurs, auquel cas la blocance temporaire dure deux tours.</li>
+        <li>Si un joueur fait un lien vague ou large, il est averti.</li>
+        <li>Deux avertissements entraînent une blocance temporaire de TROIS tours, trois avertissements entraînent une blocance temporaire de QUATRE tours et quatre avertissements entraînent l'élimination.</li>
+        <li>Aucun synonyme ayant le même sens que le mot précédent ne peut être utilisé comme base pour un lien ; cela est considéré comme un échec à faire avancer le jeu. Les liens par synonymes entraînent une blocance temporaire d'un tour pour la première infraction, de 4 tours pour la deuxième, de 16 tours pour la troisième, et ainsi de suite en multiplications de 4.</li>
+        <li>Une soumission doit être prononcée clairement et à un volume adéquat, avec au moins un témoin ; si ces conditions ne sont pas remplies, elle doit être répétée, sinon le joueur est éliminé.</li>
+        <li>Un joueur doit jouer son tour lorsqu'il est pressé, sinon il est éliminé.</li>
+        <li>Si un joueur ne comprend pas suffisamment la soumission précédente pour proposer un lien satisfaisant, il doit s'informer auprès du précédent soumissionnaire.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Oubli</h3>
+      <ul class="list">
+        <li>Si un joueur oublie le mot précédent, son adversaire peut choisir de ne pas l'aider.</li>
+        <li>Dans ces circonstances, un joueur a le droit de rester silencieux, de ne pas aider et de ne pas donner d'indices.</li>
+        <li>Le jeu continue normalement, et le joueur peut être forcé de deviner.</li>
+        <li>Si le mot deviné par un joueur ne se lie pas et échoue également après un ajustement, il est éliminé.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Infractions Indirectes</h3>
+      <ul class="list">
+        <li>Si un joueur éternue plus de deux fois dans une partie, il est éliminé.</li>
+        <li>Si un joueur avale un raisin en jouant, il est éliminé.</li>
+        <li>Si un joueur fait référence à un film ou une émission de télévision plus de deux fois en jeu, il est éliminé. Par exemple, « sur ta gauche ». Les joueurs peuvent faire référence à des films ou émissions, mais citer précisément est interdit.</li>
+        <li>Si chaque prénom des personnages principaux de "Friends" est mentionné, le joueur qui a dit le dernier prénom des six principaux est éliminé.</li>
+        <li>Si un joueur soumet le mot « jambe » après le mot « guichet », il est éliminé.</li>
+        <li>L'utilisation de Google ou d'autres moteurs de recherche est interdite, sauf accord entre joueurs.</li>
+        <li>Mentir est strictement interdit et peut entraîner l'élimination.</li>
+        <li>Toutes ces infractions ne peuvent pas être pénalisées rétroactivement après le tour avec lequel elles ont été commises, sauf en cas de solo.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sanctions</h3>
+      <ul class="list">
+        <li>Si un joueur est éliminé, il ne peut plus participer au jeu ouvert.</li>
+        <li>Le joueur éliminé doit choisir un mot piège et appliquer la Loi 2 Éliminations Section 6a si nécessaire.</li>
+        <li>Si un joueur réintègre le jeu après élimination, après avoir invoqué le Déplacement de Menyarma, le mot piège choisi reste actif.</li>
+        <li>Un faux défi entraîne une blocance temporaire de deux tours.</li>
+        <li>Si un joueur est sous blocance temporaire, il ne peut pas jouer pendant le nombre de tours.</li>
+        <li>Les joueurs éliminés peuvent toujours contester et signaler des fautes.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Le Mot Piège</h3>
+      <ul class="list">
+        <li>Si un joueur dit le mot piège choisi par un joueur éliminé, l'infracteur est éliminé et le joueur éliminé réintègre le jeu.</li>
+        <li>Si un joueur reçoit une blocance temporaire de plus de 15 tours, il doit choisir un mot piège. Si ce mot est dit pendant sa blocance, le joueur change de place avec le joueur bloqué.</li>
+        <li>Si un mot piège appartient à la liste des coups de pouvoir, le joueur piégeur reçoit un point bonus.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law3">Loi 3 :<br>Récupération</h2>
+  <ol class="list">
+    <li>
+      <h3>Ajustement</h3>
+      <ul class="list">
+        <li>Un ajustement consiste à changer votre soumission initiale pour quelque chose de différent, peut-être pour éviter une faute que vous avez remarquée, dans le cadre d'un plan de jeu plus large ou parce que le collectif a jugé votre lien initial insuffisant.</li>
+        <li>Un joueur peut ajuster sa réponse soumise tant que le(s) joueur(s) adverse(s) ne lie(nt) pas le mot à pig.</li>
+        <li>Un joueur peut ajuster sa soumission si le collectif juge que son lien initial est insuffisant.</li>
+        <li>Un joueur ne peut pas faire d’ajustement après une faute pénalisée, car son tour aura été annulé et une blocance temporaire est en cours.</li>
+        <li>Un joueur ne peut ajuster son mot qu'une seule fois et ne peut revenir au mot initial.</li>
+        <li>Si un joueur fait une faute dans son ajustement ou si l'ajustement ne lie pas, il ne peut pas réajuster et est éliminé.</li>
+        <li>Un ajustement de lien compte comme un ajustement.</li>
+        <li>Un joueur ne peut pas ajuster son mot de départ.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sauvetages</h3>
+      <ul class="list">
+        <li>Un joueur peut « sauver » un mot sur le vif s'il semble problématique en y ajoutant rapidement un autre mot. Par exemple, un joueur pourrait dire « araignée », puis sauver rapidement en ajoutant « homme » pour soumettre « Spider-Man », bien moins problématique.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law4">Loi 4 :<br>Hors-jeu</h2>
+  <ol class="list">
+    <li>
+      <h3>Infraction de hors-jeu</h3>
+      <ul class="list">
+        <li>Un joueur peut être considéré hors-jeu s'il répond avec un mot ayant la même 3e lettre que le mot précédent.</li>
+        <li>Tous les hors-jeu doivent être signalés par les joueurs adverses puis évalués par le collectif.</li>
+        <li>Un joueur peut être hors-jeu dans le cadre de sa propre soumission, par exemple : canne à sucre.</li>
+        <li>Si un joueur est hors-jeu selon la Loi 4 Sections 1a et 1c, il est éliminé.</li>
+        <li>Si le jeu continue après le tour du joueur hors-jeu, il ne peut plus être pénalisé pour cette faute.</li>
+        <li>Les hors-jeu sont une forme de faute et doivent être jugés comme tels.</li>
+        <li>On ne peut pas être hors-jeu par rapport à pig.</li>
+        <li>Bien que Pig soit un jeu phonétique, pour les hors-jeu, les mots sont considérés contextuellement dans leur association avec les mots précédents.</li>
+        <li>En cas de multiples homonymes associés au mot précédent, le joueur peut choisir l'orthographe la plus pratique pour lui, tant que l'association est correcte.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sanctions de hors-jeu</h3>
+      <ul class="list">
+        <li>Les hors-jeu entraînent une « blocance temporaire » de deux tours dans les parties à plus de deux joueurs.</li>
+        <li>La blocance temporaire s'applique également dans une partie à deux joueurs, mais elle est réduite à un tour. Le joueur restant poursuit sa tentative de gagner.</li>
+        <li>Si un joueur est pris hors-jeu, son tour est annulé, et le jeu reprend à partir de la soumission précédente.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law5">Loi 5 :<br>Fautes</h2>
+  <ol class="list">
+    <li>
+      <h3>Lien double</h3>
+      <ul class="list">
+        <li>Un lien double survient lorsqu'un joueur établit un lien non déclaré entre sa soumission et celle précédente. Par exemple, si un joueur répond au mot « bœuf » par « cochon » en argumentant que le bœuf se rapporte à la vache et que la vache se rapporte au cochon, il y a deux liens au lieu d'un. Un lien double, s'il est évident, entraîne une blocance temporaire d'un tour.</li>
+        <li>Un lien triple (lien double avec un lien supplémentaire) entraîne l'élimination.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Lien basé sur les rimes</h3>
+      <ul class="list">
+        <li>Les mots ne peuvent généralement pas être liés par rime, et cela résulte généralement en une faute et une blocance temporaire de deux tours.</li>
+        <li>Les liens basés sur les rimes sont toutefois autorisés pour lier directement au mot pig.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Antonymes</h3>
+      <ul class="list">
+        <li>Les antonymes peuvent être utilisés pour relier au mot précédent.</li>
+        <li>Cela ne s'applique cependant pas au mot pig, qui n'a pas d'antonyme clair.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Fautes multiples</h3>
+      <ul class="list">
+        <li>Si un joueur commet deux fautes ou hors-jeu en un tour, c'est une double faute, et il reçoit une blocance temporaire de quatre tours.</li>
+        <li>Une triple faute entraîne une blocance temporaire de quinze tours.</li>
+        <li>Une quadruple faute entraîne l'élimination.</li>
+        <li>Toutes les blocances s'additionnent. Toute blocance supplémentaire s'ajoute simplement aux blocances existantes.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Fautes indirectes</h3>
+      <ul class="list">
+        <li>Si un joueur soumet une réponse hors de son tour, il subit une blocance temporaire de 19 tours.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Sanctions pour fautes</h3>
+      <ul class="list">
+        <li>Si un joueur commet une faute, son tour est annulé, et le jeu continue à partir du mot précédent.</li>
+        <li>Une blocance temporaire est alors appliquée selon les règles.</li>
+        <li>Les fautes ne peuvent pas être pénalisées rétroactivement, sauf en cas de solo où un joueur joue seul avec tous les autres bloqués.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law6">Loi 6 :<br>Coups de Pouvoir</h2>
+  <ol class="list">
+    <li>
+      <h3>Coups de Pouvoir baser sur les mots</h3>
+      <ul class="list">
+        <li>Si un joueur utilise un mot de la liste des coups de pouvoir, cela est considéré comme un « coup de pouvoir ».</li>
+        <li>
+          La liste des coups de pouvoir est la suivante :
+          <ul id="powerList">
+            <li>Bois</li>
+            <li>Pomme</li>
+            <li>Perruque</li>
+            <li>George Lucas</li>
+            <li>Bourgeois</li>
+            <li>Brindille</li>
+            <li>Bœuf</li>
+            <li>Damoiselle</li>
+            <li>Arbre</li>
+            <li>Détresse</li>
+            <li>Lutin</li>
+            <li>Rêve</li>
+            <li>Esprit</li>
+            <li>Jongleur</li>
+            <li>Division</li>
+            <li>Humphrey Bogart</li>
+          </ul>
+        </li>
+        <li>Les coups de pouvoir rapportent deux points bonus (les demi-points sont arrondis vers le bas).</li>
+        <li>Une invocation de coup de pouvoir fausse entraîne une blocance temporaire de 15 tours.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law7">Loi 7 :<br>Déplacements</h2>
+  <ol class="list">
+    <li>
+      <h3>Le Déplacement de Duke Wellington</h3>
+      <ul class="list">
+        <li>Si deux soumissions successives ont les deux mêmes dernières lettres, un joueur peut invoquer ce déplacement.</li>
+        <li>Un joueur ne peut pas invoquer ce déplacement s'il a lui-même dit la dernière soumission.</li>
+        <li>Ce déplacement, une fois invoqué, inverse l'ordre du jeu.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Le Déplacement de Lord Palmer</h3>
+      <ul class="list">
+        <li>Si un joueur soumet un mot commençant par Q, ce déplacement peut être invoqué.</li>
+        <li>Un joueur ne peut pas invoquer ce déplacement s'il a lui-même prononcé la soumission commençant par Q.</li>
+        <li>Ce déplacement, une fois invoqué, permet à l'invocateur de recommencer avec un mot de son choix.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Le Déplacement Royal</h3>
+      <ul class="list">
+        <li>Si un joueur dit un palindrome, ce déplacement peut être invoqué.</li>
+        <li>Un joueur ne peut pas invoquer ce déplacement s'il a lui-même dit le palindrome.</li>
+        <li>Ce déplacement permet à l'invocateur d'éliminer un joueur de son choix.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Le Déplacement de Menyama</h3>
+      <ul class="list">
+        <li>Si trois soumissions consécutives se terminent par la même lettre, ce déplacement peut être invoqué.</li>
+        <li>Un joueur ne peut pas invoquer ce déplacement s'il a lui-même dit la dernière soumission.</li>
+        <li>Une fois invoqué, ce déplacement bloque tous les autres joueurs pour trois tours si l'invocateur est en jeu, ou permet à l'invocateur de réintégrer le jeu s'il avait été éliminé.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Le Déplacement de St Martin</h3>
+      <ul class="list">
+        <li>Si quatre co-stars sont nommés en jeu ouvert, ce déplacement peut être invoqué.</li>
+        <li>Un joueur ne peut pas invoquer ce déplacement s'il a lui-même chuchoté la dernière soumission.</li>
+        <li>Ce déplacement donne à l'invocateur le droit de bloquer qui il veut pour quatre tours au moment de l'invocation.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Règles des Déplacements</h3>
+      <ul class="list">
+        <li>Les déplacements ne peuvent pas être invoqués rétroactivement une fois le tour passé.</li>
+        <li>Les invocateurs doivent utiliser l'opportunité offerte par leur invocation au moment même de l'invocation, sinon elle est perdue.</li>
+        <li>La fausse invocation d'un déplacement entraîne une blocance temporaire de trois tours.</li>
+        <li>Toutes les pénalités de blocance temporaires pour les déplacements sont divisées par deux dans un jeu à deux joueurs (les demi-blocances sont arrondies vers le bas).</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="law8">Loi 8 :<br>Fin du jeu</h2>
+  <ol class="list">
+    <li>
+      <h3>Détermination du Résultat</h3>
+      <ul class="list">
+        <li>Un joueur gagne s'il réussit à établir un lien entre le mot précédent et le mot pig, selon les règles, sans faute et dans le bon ordre de jeu, ou s'il reste le dernier joueur en lice, tous les autres étant éliminés.</li>
+        <li>Le jeu se termine officiellement lorsqu'un joueur crie victorieusement pig avec un lien valable et sans faute.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Limite de Temps</h3>
+      <ul class="list">
+        <li>Une partie de Pig doit durer un maximum de huit heures.</li>
+        <li>Au bout de huit heures, elle se termine par un combat physique jusqu'à ce que tous les joueurs sauf un aient cédé ou soient décédés.</li>
+        <li>Si aucun joueur ne cède ou ne décède après quarante semaines, le joueur ayant le plus de points remporte la partie.</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+<div class="textBlock">
+  <h2 id="vars">Variantes :</h2>
+  <p>Voici quelques variantes des règles de pig, créées par les joueurs historiques du jeu :</p>
+  <ul class="list">
+    <li class="varList">
+      <h3>Les Règles de Stroitgeff</h3>
+      <p>Identiques aux Règles de Churchill, sauf que seuls les mammifères et les couleurs peuvent être utilisés comme liens historiques vers pig.</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Greta</h3>
+      <p>Identiques aux Règles de Churchill, sauf que seuls les animaux de ferme peuvent être utilisés comme liens historiques vers pig.</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Minsk</h3>
+      <p>Identiques aux Règles de Churchill, sauf que seuls les mammifères et la couleur rose peuvent être utilisés comme liens historiques.</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Mozart</h3>
+      <p>Identiques aux Règles de Churchill, sauf que les liens par rime sont autorisés.</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Bunson</h3>
+      <p>Identiques aux Règles de Churchill, sauf que toutes les blocances sont deux fois plus sévères.</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Benson</h3>
+      <p>Identiques aux Règles de Churchill, sauf que les blocances sont réduites de moitié (les demi-blocances sont arrondies vers le bas).</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Mandela</h3>
+      <p>Identiques aux Règles de Churchill, avec l'ajout de deux principes ultimes tirés du club de combat ; ceux qui enfreignent ces règles sont éliminés.</p>
+    </li>
+    <li class="varList">
+      <h3>Kris Classic</h3>
+      <p>Identiques aux Règles de Churchill, sauf que les joueurs tentent de lier avec Kris Jenner au lieu de pig.</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Troitzcech</h3>
+      <p>Identiques aux Règles de Churchill, sauf que les joueurs tentent de lier également au mot « avion ».</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Spoindel</h3>
+      <p>Identiques aux Règles de Napoléon, sauf que chaque tour est limité à 20 secondes.</p>
+    </li>
+    <li class="varList">
+      <h3>Les Règles de Napoléon</h3>
+      <p>Identiques aux Règles de Churchill, sauf qu'il n'y a pas de déplacements, hors-jeu, blocances temporaires, ajustements, coups de pouvoir ou infractions indirectes, et seules les répétitions entraînent l'élimination.</p>
+    </li>
+    <li class="varList">
+      <h3>La Version de Melville</h3>
+      <p>Identiques aux Règles de Churchill, sauf que chaque blocance est triplée, il n'y a pas d'ajustements et toute faute entraîne l'élimination. Chaque tour est également limité à 20 secondes et des cochons réels sont blessés.</p>
+    </li>
+    <li class="varList">
+      <h3>Blitzkrieg Pig</h3>
+      <p>Identiques aux Règles de Napoléon, sauf que chaque tour est limité à 15 secondes.</p>
+    </li>
+  </ul>
+</div>
 </body>
 
-<footer class="bar">
-  <p>Created by Archi -- TRANSLATION TO FOLLOW</p>
+<footer id="footerId" class="bar">
+  <div id="footerName">
+    <p>Site web développé par <b>Archie Saunders</b></p>
+  </div>
+  <div id="footerNotes">
+    <p>Veuillez noter que tout dans ce site est à but humoristique et ne doit pas être pris au sérieux.</p>
+  </div>
 </footer>
 
 </html>
