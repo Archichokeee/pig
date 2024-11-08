@@ -64,6 +64,11 @@ p {
   margin-bottom: 7px;
 }
 
+#headerId {
+  position: sticky;
+  top: 0;
+}
+
 #languageBox {
   background-color: #60B0B0;
   border-style: none;
